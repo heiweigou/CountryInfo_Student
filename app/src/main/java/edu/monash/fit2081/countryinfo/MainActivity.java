@@ -25,8 +25,7 @@ public class MainActivity extends AppCompatActivity {
         WebView webview =(WebView) findViewById(R.id.webview);
         webview.setWebViewClient(new WebViewClient());
         webview.loadUrl("https://en.wikipedia.org/wiki/"+message);
-
-
+        
     }
 
     @Override
