@@ -41,7 +41,8 @@ public class CountryDetails extends AppCompatActivity {
         getSupportActionBar().setTitle(R.string.title_activity_country_details);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
-        final String selectedCountry = getIntent().getStringExtra("country");
+        final String selectedCountry=getIntent().getStringExtra("country");
+
 
         name = (TextView) findViewById(R.id.country_name);
         capital = (TextView) findViewById(R.id.capital);
@@ -54,7 +55,7 @@ public class CountryDetails extends AppCompatActivity {
             @Override
             public void onClick(View v) {
 
-                Intent intent = new Intent(getApplicationContext(),MainActivity.class);
+                Intent intent = new Intent(getBaseContext(),MainActivity.class);
                 intent.putExtra("country", selectedCountry);
                 startActivity(intent);
 
