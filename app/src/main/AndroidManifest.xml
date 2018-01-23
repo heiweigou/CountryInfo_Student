@@ -47,8 +47,8 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".MapsActivity" />
         </activity>
-        <activity android:name=".MainActivity"
-            android:parentActivityName=".CountryDetails"></activity>
+
+        <activity android:name=".MainActivity"></activity>
 
     </application>
 
